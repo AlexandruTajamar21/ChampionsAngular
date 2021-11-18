@@ -1,0 +1,18 @@
+<div>
+    <table style="width: 100%" class="table">
+        <thead class="table table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Detalle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let jugador of jugadores">
+                <td>{{jugador.nombre}}</td>
+                <td><img src="{{jugador.imagen}}" style="width: 200px;"/></td>
+                <td><a class="btn btn-info" [routerLink]="['/detallesjugador',jugador.idJugador]">Detalles</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

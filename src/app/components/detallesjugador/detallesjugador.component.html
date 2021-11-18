@@ -1,0 +1,8 @@
+<div class="center">
+    <h1>{{jugador.nombre}}</h1>
+    <img src="{{jugador.imagen}}" style="width: 200px;"/>
+    <h2>{{jugador.posicion}}</h2>
+    <h3>Fecha de Nacimiento: {{jugador.fechaNacimiento}}</h3>
+    <h3>Pais: {{jugador.pais}}</h3>
+    <a [routerLink]="['/jugadores',jugador.idEquipo]" class="btn btn-success">Jugadores</a>
+</div>

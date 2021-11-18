@@ -1,0 +1,19 @@
+<div>
+    <a [routerLink]="['/realizarapuesta']" class="btn btn-danger"> Realizar apuesta</a>
+    <table style="width: 100%" class="table">
+        <thead class="table table-dark">
+            <tr>
+                <th>Usuario</th>
+                <th>Resultado</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let apuesta of apuestas">
+                <td>{{apuesta.Usuario}}</td>
+                <td>{{apuesta.Resultado}}</td>
+                <td>{{apuesta.Fecha}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <h1>
+        {{equipo.nombre}}
+    </h1>
+    <img src="{{equipo.imagen}}" style="width: 200px;"/>
+    <h2>Champions: {{equipo.champions}}</h2>
+    <p>{{equipo.descripcion}}</p>
+    <a [routerLink]="['/jugadores',equipo.idEquipo]" class="btn btn-success">Jugadores</a>
+    <a [routerLink]="['/']" class="btn btn-secondary">Volver</a>
+</div>
